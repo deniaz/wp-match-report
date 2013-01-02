@@ -1,0 +1,14 @@
+{
+	'team-1': 'fcb',
+	'team-2': 'fcsg',
+	'result': '1:0',
+	'stadium': 'St. Jakobs-Park',
+	'general-info': '30067 spectators (78%) - Ref Sascha Kever',
+	'events': {
+		40: {
+			'side': 'left',
+			'player': 'Philipp Degen',
+			'event': 'booking'
+		}
+	}
+}

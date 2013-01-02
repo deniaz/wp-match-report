@@ -1,0 +1,241 @@
+#formation-editor
+{
+	float: left;
+	position: relative;
+	background: url('../img/pitch.png') no-repeat;
+	width: 624px;
+	height: 360px;
+}
+
+#formation-editor .player .circle
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 500%;
+	-webkit-border-radius: 500%;
+	border-width: 3px;
+	border-style: solid;
+	padding: 0;
+	cursor: pointer;
+	float: left;
+	position: absolute;
+}
+
+#formation-editor .player .circle p.number
+{
+	color: #FFF;
+	font-size: 18px;
+	line-height: 1;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	text-align: center;
+	top: 6px;
+	cursor: pointer;
+}
+
+#formation-editor .player .circle p.number::after
+{
+ 	clear: both;
+}
+
+#formation-editor .player p::selection
+{
+	background: transparent;
+}
+
+#teams
+{
+	float: left;
+	margin-left: 20px;
+	max-height: 360px;
+}
+
+#teams ul.fs-tabs
+{
+	margin-bottom: 0;
+	z-index: 20;
+	position: relative;
+}
+
+#teams ul.fs-tabs li
+{
+	float: left;
+	padding: 3px 5px 5px;
+}
+
+#teams ul.fs-tabs li a
+{
+	text-decoration: none;
+}
+
+#teams ul.fs-tabs li.active
+{
+	background: #FFF;
+
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+
+	border-color: #DFDFDF #DFDFDF white;
+}
+
+#teams ul.fs-tabs li.active a
+{
+	color: #333;
+}
+
+#teams .team
+{
+	clear: both;
+	display: none;
+	
+	border-color: #DFDFDF;
+	background-color: white;
+	max-height: 303px;
+	overflow: auto;
+	padding: 0 .9em;
+	border-style: solid;
+	border-width: 1px;
+
+	width: 360px;
+	position: relative;
+	top: -7px;
+	z-index: 10;
+	padding: 10px;
+}
+
+#teams .team.active
+{
+	display: block;
+}
+
+#teams .team .player input
+{
+	width: 146px;
+}
+#teams .team .player input.squad-no
+{
+	width: 30px;
+}
+
+#teams .team input.button
+{
+	float: right;
+	margin-top: 10px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.inv
+{
+	display: none;
+}
+
+.action
+{
+	background: url('../img/action-sprite.png') no-repeat;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	text-indent: -99999px;
+}
+
+.action.goal,
+.action.inactive.goal:hover
+{
+	height: 15px;
+	width: 15px;
+	background-position: 0px 0px;
+}
+
+.action.goal.inactive
+{
+	background-position: 0px -20px;
+}
+
+.action.booking,
+.action.inactive.booking:hover
+{
+	height: 15px;
+	width: 10px;
+	background-position: -20px 0px;
+}
+
+.action.booking.inactive
+{
+	background-position: -20px -20px;
+}
+
+.action.direct-sendoff,
+.action.inactive.direct-sendoff:hover
+{
+	height: 15px;
+	width: 10px;
+	background-position: -35px 0px;
+}
+
+.action.direct-sendoff.inactive
+{
+	background-position: -35px -20px;
+}
+
+.action.sendoff,
+.action.inactive.sendoff:hover
+{
+	height: 18px;
+	width: 14px;
+	background-position: -50px 0px;
+}
+
+.action.sendoff.inactive
+{
+	background-position: -50px -20px;
+}
+
+.action.sub-on,
+.action.inactive.sub-on:hover
+{
+	height: 15px;
+	width: 11px;
+	background-position: -69px 0px;
+}
+
+.action.sub-on.inactive
+{
+	background-position: -69px -20px;
+}
+
+.action.sub-off,
+.action.inactive.sub-off:hover
+{
+	height: 15px;
+	width: 11px;
+	background-position: -85px 0px;
+}
+
+.action.sub-off.inactive
+{
+	background-position: -85px -20px;
+}
+
+#squad-sheets .squad-sheet
+{
+	width: 312px;
+	float: left;
+}
+
+#squad-sheets .squad-sheet ul
+{
+	width: 156px;
+	float: left;
+}

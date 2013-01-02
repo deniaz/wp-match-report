@@ -1,0 +1,347 @@
+.inv { display: none; }
+.clear { clear: both; }
+
+nav#fs-nav { margin-bottom: 20px; }
+nav#fs-nav ul {	list-style: none; }
+nav#fs-nav ul li
+{ 
+	background: none; 
+	float: left;
+}
+nav#fs-nav ul li a
+{
+	display: block;
+	background-color: #F5F5F2;
+	background-image: -moz-linear-gradient(top,#F5F5F2,gainsboro);
+	background-image: -ms-linear-gradient(top,#F5F5F2,gainsboro);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#F5F5F2),to(gainsboro));
+	background-image: -webkit-linear-gradient(top,#F5F5F2,gainsboro);
+	background-image: -o-linear-gradient(top,#F5F5F2,gainsboro);
+	background-image: linear-gradient(top,#F5F5F2,gainsboro);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f2',endColorstr='#dcdcdc',GradientType=0);
+	border-color: gainsboro gainsboro #B6B6B6;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border: 1px solid #B7B6AC;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	color: #888579;
+	width: 110px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 28px;
+	padding-top: 2px;
+	text-decoration: none;
+}
+
+nav#fs-nav ul li a:hover
+{
+	background: #EBEBE5;
+	color: #4E4D47;
+}
+
+nav#fs-nav ul li.left a
+{
+	-webkit-border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+	border-right: 0;
+}
+
+nav#fs-nav ul li.right a
+{
+	-webkit-border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	border-left: 0;
+}
+
+nav#fs-nav ul li.active a
+{
+	filter: none;
+	background: #D8D6CA;
+	color: #4E4D47;
+	cursor: default;
+	-webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.35);
+	box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+}
+
+.match-box
+{
+	width: 624px;
+	height: 240px;
+	background: url('../img/result-bg.png') no-repeat;
+}
+
+.match-box h1
+{
+	resize: none;
+	background: transparent;
+	border: 0 none;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 1;
+	text-align: center;
+	padding-top: 80px;
+	position: absolute;
+	width: 624px;
+	cursor: default;
+}
+
+.match-box h1::selection
+{
+	background: transparent;
+	cursor: default;
+}
+
+.match-box .logo
+{
+	width: 312px;
+	height: 240px;
+	background: url('../img/logos-sprite.png') no-repeat;
+}
+
+.match-box .logo.left
+{
+	float: left;
+}
+
+.match-box .logo.right
+{
+	float: right;
+}
+
+.match-box .logo.left.fcb { background-position: 0px 0px; }
+.match-box .logo.right.fcb { background-position: -330px 0px; }
+.match-box .logo.left.fcsg { background-position: 0px -255px; }
+.match-box .logo.right.fcsg { background-position: -330px -255px; }
+.match-box .logo.left.gcz { background-position: 0px -510px; }
+.match-box .logo.right.gcz { background-position: -330px -510px; }
+.match-box .logo.left.fcs { background-position: 0px -765px; }
+.match-box .logo.right.fcs { background-position: -330px -765px; }
+.match-box .logo.left.yb { background-position: 0px -1015px; }
+.match-box .logo.right.yb { background-position: -330px -1015px; }
+.match-box .logo.left.ls { background-position: 0px -1270px; }
+.match-box .logo.right.ls { background-position: -330px -1270px; }
+.match-box .logo.left.fcl { background-position: 0px -1525px; }
+.match-box .logo.right.fcl { background-position: -330px -1525px; }
+.match-box .logo.left.fct { background-position: 0px -1780px; }
+.match-box .logo.right.fct { background-position: -330px -1780px; }
+.match-box .logo.left.fcz { background-position: 0px -2035px; }
+.match-box .logo.right.fcz { background-position: -330px -2035px; }
+.match-box .logo.left.sfc { background-position: 0px -2290px; }
+.match-box .logo.right.sfc { background-position: -330px -2290px; }
+.match-box .logo.left.fca { background-position: 0px -2545px; }
+.match-box .logo.right.fca { background-position: -330px -2545px; }
+
+p.park
+{
+	margin: 20px 0;
+}
+
+#pitch
+{
+	width: 624px;
+	height: 360px;
+	background: url('../img/pitch.png') no-repeat;
+	position: relative;
+	margin: 20px 0;
+}
+
+#pitch .player
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 500%;
+	-webkit-border-radius: 500%;
+	border-width: 3px;
+	border-style: solid;
+	padding: 0;
+	float: left;
+	position: absolute;
+}
+
+#pitch .player p
+{
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	text-align: center;
+	top: 6px;
+	cursor: default;
+}
+
+#pitch::selection,
+#pitch .player::selection,
+#pitch .player p::selection
+{
+	background: transparent;
+}
+
+#team-sheet-1 ul,
+#team-sheet-2 ul
+{
+	float: left;
+	width: 150px;
+}
+
+#team-sheet-1 ul li,
+#team-sheet-2 ul li
+{
+	clear: both;
+	margin-bottom: 5px;
+}
+
+ul.subs
+{
+	margin-left: 12px;
+}
+
+table#event-table
+{
+	width: 624px;
+}
+
+table#event-table tr
+{
+	background: #FFF;
+	border: none;
+}
+
+table#event-table tr td
+{
+	padding: 5px 0;
+}
+
+table#event-table tr td.left,
+table#event-table tr td.right
+{
+	width: 300px;
+}
+
+table#event-table tr td.left span,
+table#event-table tr td.right span
+{
+}
+
+table#event-table tr td.mid
+{
+	width: 24px;
+	text-align: center;
+	font-weight: bold;
+}
+
+table#event-table tr td.left
+{
+	text-align: right;
+	padding-right: 20px;
+}
+
+table#event-table tr td.right
+{
+	text-align: left;
+	padding-left: 20px;
+}
+
+table#event-table tr:nth-child(2n+1)
+{
+	background: #e9e9e9;
+}
+
+#team-sheet-1 ul .action,
+#team-sheet-2 ul .action
+{
+	float: left;
+	margin-right: 4px;
+}
+
+.action
+{
+	background: url('../img/action-sprite.png') no-repeat;
+	display: inline-block;
+	margin-left: 2px;
+	text-indent: -99999px;
+}
+
+.action.goal,
+.action.inactive.goal:hover
+{
+	height: 15px;
+	width: 15px;
+	background-position: 0px 0px;
+}
+
+.action.goal.inactive
+{
+	background-position: 0px -20px;
+}
+
+.action.booking,
+.action.inactive.booking:hover
+{
+	height: 15px;
+	width: 10px;
+	background-position: -20px 0px;
+}
+
+.action.booking.inactive
+{
+	background-position: -20px -20px;
+}
+
+.action.direct-sendoff,
+.action.inactive.direct-sendoff:hover
+{
+	height: 15px;
+	width: 10px;
+	background-position: -35px 0px;
+}
+
+.action.direct-sendoff.inactive
+{
+	background-position: -35px -20px;
+}
+
+.action.sendoff,
+.action.inactive.sendoff:hover
+{
+	height: 18px;
+	width: 14px;
+	background-position: -50px 0px;
+}
+
+.action.sendoff.inactive
+{
+	background-position: -50px -20px;
+}
+
+.action.sub-on,
+.action.inactive.sub-on:hover
+{
+	height: 15px;
+	width: 11px;
+	background-position: -69px 0px;
+}
+
+.action.sub-on.inactive
+{
+	background-position: -69px -20px;
+}
+
+.action.sub-off,
+.action.inactive.sub-off:hover
+{
+	height: 15px;
+	width: 11px;
+	background-position: -85px 0px;
+}
+
+.action.sub-off.inactive
+{
+	background-position: -85px -20px;
+}
